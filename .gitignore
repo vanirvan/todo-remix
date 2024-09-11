@@ -3,3 +3,6 @@ node_modules
 /.cache
 /build
 .env
+
+# prisma migration files
+app/lib/db/migrations/**/*

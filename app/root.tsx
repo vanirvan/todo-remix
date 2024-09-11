@@ -7,6 +7,11 @@ import {
 } from "@remix-run/react";
 import "./tailwind.css";
 
+// Supports weights 200-800
+import "@fontsource-variable/plus-jakarta-sans";
+
+import { Footer } from "~/components/footer";
+
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
@@ -26,5 +31,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <main className="font-plus-jakarta-sans relative min-h-svh w-full bg-background pb-12">
+      <Outlet />
+      <Footer />
+    </main>
+  );
 }
