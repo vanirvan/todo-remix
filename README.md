@@ -13,6 +13,9 @@ Run these script in your terminal:
 
 ```shellscript
 pnpm install
+
+pnpm dlx prisma migrate dev
+
 pnpm run dev
 ```
 
